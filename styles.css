@@ -30,12 +30,24 @@ img {
   letter-spacing: 1.04px;
 }
 .hero-text {
-  font-family: DM Sans, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 140%;
   color: #fcfcfc;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.hero-arrow {
+  fill: #fcfcfc;
+  transform-origin: 0;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (max-width: 480px) {
   .hero-text {
+    display: none;
+  }
+  .hero-arrow {
     display: none;
   }
 }
@@ -55,10 +67,10 @@ img {
     left: 216px;
   }
   .hero-text {
-    max-width: 165px;
+    width: 165px;
     font-size: 12px;
     margin-bottom: 12px;
-    max-height: 68px;
+    height: 68px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -81,6 +93,10 @@ img {
     left: 257px;
   }
   .hero-text {
+    width: 200px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 1199px) {
