@@ -8,11 +8,28 @@ img {
   position: relative;
 }
 
-.container {
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.hero-link {
+  display: block;
+}
+.hero-container {
   margin: 0 auto;
   padding: 0 20px;
+  min-width: 320px;
   max-width: 480px;
   max-height: 415px;
+  min-height: 502px;
+}
+.container-hero-background {
+  background-image: url("/hero/dots-mob-left.png"),
+    url("/hero/dots-mob-right.png");
+  background-size: 110px 34px, 130px 48px;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 0px, 100%;
+  background-position-y: 100%, 100%;
 }
 
 .hero-content {
@@ -50,12 +67,23 @@ img {
   .hero-arrow {
     display: none;
   }
+  .hero-description {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .hero-container {
     max-width: 768px;
     padding: 0 32px;
+  }
+  .container-hero-background {
+    background-image: url("/hero/dots-tab-left.png"),
+      url("/hero/dots-tab-right.png");
+    background-size: 110px 34px, 182px 67px;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 0px, 100%;
+    background-position-y: 100%, 100%;
   }
   .hero-content {
     padding-top: 104px;
@@ -74,10 +102,16 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .hero-container {
     max-width: 1200px;
     max-height: 664px;
     padding: 0 16px;
+  }
+  .container-hero-background {
+    background-image: url("/hero/dots-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 383px;
   }
   .hero-content {
     padding-top: 118px;

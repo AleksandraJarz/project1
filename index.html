@@ -21,7 +21,7 @@
   </head>
   <body>
     <section class="hero">
-        <div class="container container-background">
+        <div class="hero-container container-hero-background">
             <div class="hero-content">
           <h1 class="hero-title">ICE CREAM MADE WITH 
             <span class="hero-title-accent"> PASSION </span></h1>
@@ -45,27 +45,27 @@
             <div class="hero-text-arrow">
             <p class="hero-text">Indulge in a scoop of ice cream made with passion and treat your taste buds to an
             unforgettable experience!</p>
-            <a href="#products">
-              <svg class="hero_arrow" width="41" height="15">
-                <use href="/hero/icons.svg#icon_Arrow"></use>
-              </svg> 
+            <a class="hero-link" href="#products">
+                    <svg class="hero-arrow" width="40px" height="16px">
+                        <use href="/hero/icon.svg#icon-Arrow"></use>
+                    </svg>
             </a>
             </div>
           </div>
           <div class="stats"></div>
           <div class="image-wrapper">
-            <img 
-            src="/hero/hero-mobile1x.png"
-            alt="Ice-cream"
+            <img
+            src=".hero/hero-mobile1x.png"
+            class="hero-icecream"
+            alt="ice-cream balls, with smiles"
             srcset="
-            /hero/hero-mobile1x.png 1x 177w,
-            /hero/hero-mobile2x.png 2x 177w,
-            /hero/hero-tab1x.png 1x 268w,
-            /hero/hero-tab2x.png 2x 268w,
-            /hero/hero-desk1x.png 1x 456w,
-            /hero/hero-desk2x.png 2x 456w"
-
-            sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, 177px" />
+              ./hero/hero-mobile2x.png 2x,
+              ./hero/hero-tab1x.png  1x,
+              ./hero/hero-tab2x.png  2x,
+              ./hero/hero-desk1x.png 1x,
+              ./hero/hero-desk2x.png 2x,
+            "
+            sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw" />
             
             </div>
         </div>
